@@ -1,0 +1,85 @@
+\documentclass{article}
+\usepackage{zed-csp,graphicx}
+
+\oddsidemargin 0in
+\evensidemargin 0in
+\marginparwidth 40pt
+\marginparsep 10pt
+\topmargin 0pt
+\headsep 0in
+\headheight 0in
+\textheight 8.5in
+\textwidth 6in
+\brokenpenalty=10000
+
+% \homework{number}{date}{title}{due-date}
+\newcommand{\homework}[4]{
+
+\begin{center}
+\rule{\textwidth}{.0075in} \\
+\rule[3mm]{\textwidth}{.0075in}\\
+
+Org Code \& 17-755\hfill Subject\hfill Presenters\\[3ex]
+
+{\Large #4} \\[3ex]
+
+#1 \hfill  {\it Type}  \hfill Due: #3\\
+
+\rule{\textwidth}{.0075in} \\
+\rule[3mm]{\textwidth}{.0075in} \\
+\end{center}
+
+}
+
+\newenvironment{symbolfootnotes}{\def\thefootnote{\fnsymbol{footnote}}}{}
+
+\begin{document}
+
+\homework{Nitish M. Devadiga}{3}{MON. DD, YYYY}{Topics}
+
+\begin{enumerate}
+
+\item {\it Question.} 
+
+\begin{description}
+    \item Answer. 
+    
+   \end{description}
+
+\item {\it Question.} 
+
+\begin{description} 
+    \item Answer. 
+    \begin{enumerate}
+      \item 
+      \item 
+      \item 
+      \item 
+    \end{enumerate}
+\end{description}
+
+\item {\it Question.} 
+
+\begin{description} 
+    \item Answer. 
+    \begin{enumerate}
+      \item 
+      \item 
+      \item 
+      \item 
+    \end{enumerate}
+\end{description}
+
+\item {\it Question.} 
+
+\begin{description}
+    \item Answer:
+    \begin{enumerate}
+      \item 
+      \item 
+    \end{enumerate}
+\end{description}
+
+
+\end{enumerate}
+\end{document}
