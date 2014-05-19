@@ -1,0 +1,86 @@
+\documentclass{article}
+\usepackage{zed-csp,graphicx}
+
+\oddsidemargin 0in
+\evensidemargin 0in
+\marginparwidth 40pt
+\marginparsep 10pt
+\topmargin 0pt
+\headsep 0in
+\headheight 0in
+\textheight 8.5in
+\textwidth 6in
+\brokenpenalty=10000
+
+% \homework{number}{date}{title}{due-date}
+\newcommand{\homework}[4]{
+
+\begin{center}
+\rule{\textwidth}{.0075in} \\
+\rule[3mm]{\textwidth}{.0075in}\\
+
+Presentation \hfill PyCon 2014\hfill Ned Lovely Jackson\\[3ex]
+
+{\Large #4} \\[3ex]
+
+#1 \hfill  {\it My Notes} \hfill Date: #3\\
+
+\rule{\textwidth}{.0075in} \\
+\rule[3mm]{\textwidth}{.0075in} \\
+\end{center}
+
+}
+
+\newenvironment{symbolfootnotes}{\def\thefootnote{\fnsymbol{footnote}}}{}
+
+\begin{document}
+
+\homework{Nitish M. Devadiga}{3}{May. 09, 2014}{Enough Machine Learning to Make Hacker News Readable Again}
+
+\begin{enumerate}
+
+\item {\it Topic.} This presentation described the use of python sci-kit library for machine learning. Hacker news is used as example to describe this, by scraping data from hacker news and training the model as per the users preference to read or not to read.
+
+\begin{verbatim}
+  https://www.youtube.com/watch?v=O7IezJT9uSI#t=177
+\end{verbatim}
+
+\item {\it Question.} What is Machine learning?
+
+\begin{description}
+    \item Machine learning is just applying statistics to big piles of data
+    \item Basically it can be divided into four basic step
+      \begin{enumerate}
+        \item Get the data
+        \item Engineer the data
+        \item Train and tune the data
+        \item Apply model to make sense of the data
+      \end{enumerate}
+\end{description}
+
+\item {\it Types of Machine Learning.} Supervised learning and Unsupervised learning
+
+\begin{description} 
+    \item Supervised - Input data and some output value, for example - Scrap data and check where the data is useful or not
+    \item Unsupervised - We have lots of data and visualize them to subjects, trying to understand the data
+    \item Some of python features that help achieve this are
+    \begin{enumerate}
+      \item Parallel arrays x,y 
+        \begin{enumerate}
+          \item x - input eg. arr of dictionaries hacker news data 
+          \item y - output boolean, read news (true) dont read (false)
+        \end{enumerate}
+      \item Validation set - This validates our model whether the model worked or not
+      \item Pipelines - put together series of complex text
+      \item Hyper parameters - transform fit predict
+    \end{enumerate}
+\end{description}
+
+\item {\it How to.} Get the data
+
+\begin{description} 
+  \item Post requests to hackernews, parse data using lxml, classify raw data whether good or not good, dreck and non dreck. Messy data to normalized numpy arrays. If you need grammar n-grams (groups of words), term frequency
+\end{description}
+
+\end{enumerate}
+\end{document}
